@@ -13,6 +13,7 @@ class Pump
     PumpState m_state;
 
     public:
+    Pump() : m_state(PumpState::OFF) {};
     
     /**
      * @fn   PumpState GetState(void)

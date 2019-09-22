@@ -1,3 +1,5 @@
+cmake_minimum_required(VERSION 3.12)
+
 Project(PoolController)
 
 SET(SRC_FILES 
@@ -49,6 +51,6 @@ endif()
 # add_test(NAME example_test COMMAND example)
 
 
-ADD_EXECUTABLE(PoolControllerTest ${TEST_FILES})
+ADD_EXECUTABLE(PoolControllerTest ${TEST_FILES} ${SRC_FILES})
 TARGET_LINK_LIBRARIES(PoolControllerTest gtest gtest_main)
 add_test(NAME example_test COMMAND PoolControllerApp)

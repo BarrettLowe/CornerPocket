@@ -6,6 +6,8 @@
 class FakePump : public Pump
 {
     public:
+
+    FakePump();
     virtual bool RequestState(PumpState);
     virtual bool SetState(PumpState);
 

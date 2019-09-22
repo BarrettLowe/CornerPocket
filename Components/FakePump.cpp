@@ -1,5 +1,10 @@
 #include "FakePump.hpp"
 
+FakePump::FakePump() :
+    Pump()
+{
+}
+
 bool FakePump::RequestState(PumpState reqState)
 {
     m_state = reqState; 
