@@ -2,12 +2,15 @@ cmake_minimum_required(VERSION 3.12)
 
 Project(PoolController)
 
+SET(CMAKE_CXX_STANDARD 17)
+
 SET(SRC_FILES 
     Components/FakePump.cpp
     )
 
 SET(TEST_FILES
     Components/PumpTest.cpp
+    ScheduleTest.cpp
     )
 
 ADD_EXECUTABLE(PoolControllerApp main.cpp ${SRC_FILES})
